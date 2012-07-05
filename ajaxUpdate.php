@@ -6,4 +6,4 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $address = $_POST['address'];
 
-$db->query("UPDATE messages SET name = " . $name . " WHERE id = " . $id);
+$db->query("UPDATE messages SET `name` = '" . $name . "', `phone` = '" . $phone . "', `address` = '" . $address . "' WHERE `id` = " . $id);
